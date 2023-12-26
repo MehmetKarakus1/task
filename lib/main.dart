@@ -21,7 +21,7 @@ Future<void> setupHive() async {
     for (var task in taskBox.values) {
       if (task.createdAt.day != DateTime.now().day) {
         taskBox.delete(task.id);
-      }// gün geçince görevleri silme
+      } // gün geçince görevleri silme
     }
   });
 }
@@ -53,4 +53,6 @@ class MyApp extends StatelessWidget {
       home: const HomePage(),
     );
   }
+
+  // mehmetkarakus0058@gmail.com
 }
